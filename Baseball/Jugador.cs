@@ -10,13 +10,19 @@ namespace Baseball
     {
         public string NombreJugador { get; set; }
         public string Numero { get; set; }
-
-        public List<Equipo> Equipos { get; set; }
-
+        
         public Jugador()
         {
-            Equipos = new List<Equipo>();
-
+            NombreJugador = "Nuevo jugador";
+            Numero = "Numero nuevo";
         }
+
+        public Jugador(string nombreJugador, string numero)
+        {
+            NombreJugador = nombreJugador;
+            Numero = numero;
+        }
+
+
     }
 }
