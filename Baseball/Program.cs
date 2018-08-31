@@ -12,7 +12,7 @@ namespace Baseball
         {
             List<Equipo> listaEquipos = new List<Equipo>();
             listaEquipos.Add(new Equipo());
-            listaEquipos[0].estadio = new Estadio("Stadium", "Obregon", 60000);
+            listaEquipos[0].Estadio1 = new Estadio("Stadium", "Obregon", 60000);
             listaEquipos[0].NombreEquipo = "The team";
             listaEquipos[0].Jugadores.Add(new Jugador("asdasd", "12"));
             listaEquipos[0].Jugadores.Add(new Jugador("asdasd", "12"));
@@ -26,7 +26,6 @@ namespace Baseball
 
             listaEquipos.Add(new Equipo());
             listaEquipos[1].NombreEquipo = "L'équipe";
-            listaEquipos[0].estadio = new Estadio();
             listaEquipos[1].Jugadores.Add(new Jugador("asdasd", "13"));
             listaEquipos[1].Jugadores.Add(new Jugador("asdasd", "13"));
             listaEquipos[1].Jugadores.Add(new Jugador("asdasd", "13"));
@@ -40,9 +39,9 @@ namespace Baseball
             {
                 Console.WriteLine("Nombre del Equipo: " + elementoEquipo.NombreEquipo);
 
-                if(elementoEquipo.estadio.NombreEstadio != null)
+                if(elementoEquipo.Estadio1 != null)
                 {
-                    Console.WriteLine("Nombre del Estadio " + elementoEquipo.estadio.NombreEstadio);
+                    Console.WriteLine("Nombre del Estadio: " + elementoEquipo.Estadio1.NombreEstadio);
                 }
                 else
                 {

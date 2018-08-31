@@ -13,7 +13,7 @@ namespace Baseball
         public string Entrenador { get; set; }
         
         public List<Jugador> Jugadores { get; set; }
-        public Estadio estadio { get; set; }
+        public Estadio Estadio1 { get; set; }
 
         public Equipo()
         {

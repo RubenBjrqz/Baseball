@@ -14,7 +14,7 @@ namespace Baseball
 
         public Estadio()
         {
-            NombreEstadio = "Estadio Nuevo";
+            NombreEstadio = "Nuevo Estadio";
             Direccion = "Direccion Nueva";
             Capacidad = 0;
         }
